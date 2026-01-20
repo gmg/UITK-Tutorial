@@ -1,16 +1,46 @@
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static GameManager Instance { get; private set; }
+    public int Score { get; private set; }
+
+    private void Awake()
     {
-        
+        if (Instance != null && Instance != this)
+        {
+            Debug.Log("Too many game managers, deleting extra");
+            Destroy(gameObject);
+        } 
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(this);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        Gem.GemCollected += OnGemCollected;
+        KeyCard.KeyCardCollected += OnKeyCardCollected;
+        Door.DoorEntered += OnDoorEntered;
     }
+
+    private void OnGemCollected()
+    {
+        Score++;
+        Debug.Log($"Score updated: {Score}");
+    }
+
+    private void OnKeyCardCollected()
+    {
+        Debug.Log("KeyCard Collected");
+    }
+
+    private void OnDoorEntered()
+    {
+        Debug.Log("Door Entered");
+    }
+
 }
