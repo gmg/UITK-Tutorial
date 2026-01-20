@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6520635225955119151}
   - component: {fileID: 1061039232901411369}
   - component: {fileID: 4361441914359303847}
+  - component: {fileID: 2006372410334948212}
   m_Layer: 0
   m_Name: KeyCard
   m_TagString: Untagged
@@ -137,3 +138,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2006372410334948212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897305144781101946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92fdcd3eb1555a4aa56924c9c60efdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
