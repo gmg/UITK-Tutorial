@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Too many game managers, deleting extra");
             Destroy(gameObject);
-        } 
+        }
         else
         {
             Instance = this;
@@ -60,7 +60,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Door Entered");
     }
-<<<<<<< Updated upstream
 
     private void OnPlayerDied()
     {
@@ -68,6 +67,4 @@ public class GameManager : MonoBehaviour
         Debug.Log("Player died");
     }
 
-=======
->>>>>>> Stashed changes
 }
