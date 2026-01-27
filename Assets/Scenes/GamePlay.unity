@@ -889,14 +889,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2138120119}
     m_Modifications:
     - target: {fileID: 1400026053293042991, guid: 31627678bd932484d82091040da74306, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1400026053293042991, guid: 31627678bd932484d82091040da74306, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1400026053293042991, guid: 31627678bd932484d82091040da74306, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4
       objectReference: {fileID: 0}
@@ -1028,14 +1020,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2138120119}
     m_Modifications:
-    - target: {fileID: 1400026053293042991, guid: 31627678bd932484d82091040da74306, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1400026053293042991, guid: 31627678bd932484d82091040da74306, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 1400026053293042991, guid: 31627678bd932484d82091040da74306, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8
@@ -1476,14 +1460,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2138120119}
     m_Modifications:
     - target: {fileID: 1400026053293042991, guid: 31627678bd932484d82091040da74306, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1400026053293042991, guid: 31627678bd932484d82091040da74306, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1400026053293042991, guid: 31627678bd932484d82091040da74306, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9
       objectReference: {fileID: 0}
@@ -1797,14 +1773,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2138120119}
     m_Modifications:
-    - target: {fileID: 1400026053293042991, guid: 31627678bd932484d82091040da74306, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1400026053293042991, guid: 31627678bd932484d82091040da74306, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 1400026053293042991, guid: 31627678bd932484d82091040da74306, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4

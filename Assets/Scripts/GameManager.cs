@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Door Entered");
     }
+<<<<<<< Updated upstream
 
     private void OnPlayerDied()
     {
@@ -67,4 +68,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("Player died");
     }
 
+=======
+>>>>>>> Stashed changes
 }
