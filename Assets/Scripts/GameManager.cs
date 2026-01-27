@@ -1,10 +1,12 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     public int Score { get; private set; }
+    public int Lives { get; private set; }
 
     private void Awake()
     {
@@ -20,11 +22,27 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void StartNewGame()
+    {
+        Score = 0;
+        Lives = 3;
+        SceneManager.LoadScene("GamePlay");
+    }
+
     private void OnEnable()
     {
         Gem.GemCollected += OnGemCollected;
         KeyCard.KeyCardCollected += OnKeyCardCollected;
         Door.DoorEntered += OnDoorEntered;
+        Player.PlayerDied += OnPlayerDied;
+    }
+
+    private void OnDisable()
+    {
+        Gem.GemCollected -= OnGemCollected;
+        KeyCard.KeyCardCollected -= OnKeyCardCollected;
+        Door.DoorEntered -= OnDoorEntered;
+        Player.PlayerDied -= OnPlayerDied;
     }
 
     private void OnGemCollected()
@@ -41,6 +59,12 @@ public class GameManager : MonoBehaviour
     private void OnDoorEntered()
     {
         Debug.Log("Door Entered");
+    }
+
+    private void OnPlayerDied()
+    {
+        Lives--;
+        Debug.Log("Player died");
     }
 
 }

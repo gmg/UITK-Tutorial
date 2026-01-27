@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 8.0f;
+
+    public static event Action PlayerDied;
 
     private Rigidbody2D _rb2d;
     private Vector2 _moveInput;
